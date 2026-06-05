@@ -66,7 +66,7 @@ body {
   padding: 5rem 5% 4rem;
   background:
     linear-gradient(rgba(0, 0, 0, 0.128), #11111161),
-    radial-gradient(circle at top, #1b7aa3, #111 60%);
+    radial-gradient(circle at top, #71757f, #111 60%);
   overflow: visible;
 }
 
