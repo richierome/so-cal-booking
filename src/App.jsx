@@ -5,46 +5,46 @@ import { useState } from "react";
 
 
 
-// const bands = [
-//   {
-//     name: "Hell City Havoc",
-//     genre: "Psychobilly / Punk",
-//     location: "Southern California",
-//     status: "Available",
-//     rate: "$800 - $1,500",
-//   },
-//   {
-//     name: "The Grave Shakers",
-//     genre: "Rockabilly",
-//     location: "Los Angeles, CA",
-//     status: "Booked",
-//     rate: "$1,200+",
-//   },
-//   {
-//     name: "Dead Radio Kings",
-//     genre: "Punk Rock",
-//     location: "Orange County, CA",
-//     status: "Available",
-//     rate: "$700 - $1,000",
-//   },
-// ];
+const bands = [
+  {
+    name: "Hell City Havoc",
+    genre: "Psychobilly / Punk",
+    location: "Southern California",
+    status: "Available",
+    rate: "$800 - $1,500",
+  },
+  {
+    name: "The Grave Shakers",
+    genre: "Rockabilly",
+    location: "Los Angeles, CA",
+    status: "Booked",
+    rate: "$1,200+",
+  },
+  {
+    name: "Dead Radio Kings",
+    genre: "Punk Rock",
+    location: "Orange County, CA",
+    status: "Available",
+    rate: "$700 - $1,000",
+  },
+];
 
-// const bookingRequests = [
-//   {
-//     band: "Hell City Havoc",
-//     venue: "Alex’s Bar",
-//     city: "Long Beach, CA",
-//     date: "2026-08-15",
-//     status: "Pending",
-//   },
-//   {
-//     band: "The Grave Shakers",
-//     venue: "The Viper Room",
-//     city: "Los Angeles, CA",
-//     date: "2026-09-02",
-//     status: "Confirmed",
-//   },
-// ];
+const bookingRequests = [
+  {
+    band: "Hell City Havoc",
+    venue: "Alex’s Bar",
+    city: "Long Beach, CA",
+    date: "2026-08-15",
+    status: "Pending",
+  },
+  {
+    band: "The Grave Shakers",
+    venue: "The Viper Room",
+    city: "Los Angeles, CA",
+    date: "2026-09-02",
+    status: "Confirmed",
+  },
+];
 
 const venues = [
   {
@@ -95,39 +95,67 @@ function App() {
           </a>
         </div>
       </nav>
-      {/* <nav className="navbar">
-        <h1>Band Manager Booking</h1>
-        <div>
-          <a href="#roster">Roster</a>
-          <a href="#bookings">Bookings</a>
-          <a href="#venues">Venues</a>
-        </div>
-      </nav> */}
-
+  
      <section className="hero">
         {/* <p className="eyebrow">Booking By Romeo</p> */}
 
         <div className="hero-image-container">
-          <img
-            src="/images/romeo2.png"
-            alt="Romeo Booking"
-            className="hero-image"
-          />
+        <img
+          src={`${import.meta.env.BASE_URL}images/romeo2.png`}
+          alt="Romeo Booking"
+          className="hero-image"
+        />
         </div>
-
-        <h1 className="intro">Management & Booking</h1>
-
+        <h1 className="intro">Bands & Artists</h1>
         <p className="bio">
-          Professional booking management for bands, venues
-          and touring artists.
+          {/* Bands I've worked with. */}
+          {/* Professional booking management for bands, venues
+          and touring artists. */}
         </p>
-
-        <a className="hero-btn" href="#bookings">
+        {/* <a className="hero-btn" href="#bookings">
           Book Now
+        </a> */}
+
+        <div className="band-links">
+        <a
+          href="https://www.instagram.com/hell_city_havoc_official/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="band-link"
+        >
+          <img
+            src={`${import.meta.env.BASE_URL}images/hch.png`}
+            alt="Hell City Havoc"
+          />
         </a>
+
+        <a
+          href="https://www.instagram.com/hellbillys_band_page/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="band-link"
+        >
+          <img
+            src={`${import.meta.env.BASE_URL}images/hellbillys.png`}
+            alt="So Cal Romeo"
+          />
+        </a>
+
+        <a
+          href="https://www.instagram.com/the_hexxers_/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="band-link"
+        >
+          <img
+            src={`${import.meta.env.BASE_URL}images/hexxers.png`}
+            alt="Band 3"
+          />
+        </a>
+      </div>
       </section>
 
-      {/* <section className="stats">
+       {/* <section className="stats">
         <div>
           <h3>{bands.length}</h3>
           <p>Bands Managed</p>
@@ -140,9 +168,9 @@ function App() {
           <h3>{venues.length}</h3>
           <p>Venue Contacts</p>
         </div>
-      </section> */}
+      </section>  */}
 
-      {/* <section id="roster" className="section">
+       {/* <section id="roster" className="section">
         <h2>Band Roster</h2>
         <div className="card-grid">
           {bands.map((band) => (
@@ -159,9 +187,9 @@ function App() {
             </article>
           ))}
         </div>
-      </section> */}
+      </section>  */}
 
-      {/* <section id="bookings" className="section">
+       {/* <section id="bookings" className="section">
         <h2>Booking Requests</h2>
         <div className="table-wrap">
           <table>
@@ -195,7 +223,7 @@ function App() {
             </tbody>
           </table>
         </div>
-      </section> */}
+      </section>  */}
 
       <section id="venues" className="section">
         <h2>Venue Contacts</h2>

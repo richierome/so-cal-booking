@@ -121,6 +121,42 @@ button {
   cursor: pointer;
 }
 
+.band-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.band-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 140px;
+  height: 140px;
+
+  background: #1b1b1b;
+  border: 1px solid #333;
+  border-radius: 12px;
+
+  transition: all 0.3s ease;
+}
+
+.band-link:hover {
+  transform: translateY(-5px);
+  border-color: #ffffff;
+}
+
+.band-link img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+}
+
 /* STATS */
 
 .stats {
@@ -448,5 +484,12 @@ textarea {
   .form-section form {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .band-link {
+    width: 100px;
+    height: 100px;
   }
 }
