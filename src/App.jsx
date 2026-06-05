@@ -5,46 +5,46 @@ import { useState } from "react";
 
 
 
-const bands = [
-  {
-    name: "Hell City Havoc",
-    genre: "Psychobilly / Punk",
-    location: "Southern California",
-    status: "Available",
-    rate: "$800 - $1,500",
-  },
-  {
-    name: "The Grave Shakers",
-    genre: "Rockabilly",
-    location: "Los Angeles, CA",
-    status: "Booked",
-    rate: "$1,200+",
-  },
-  {
-    name: "Dead Radio Kings",
-    genre: "Punk Rock",
-    location: "Orange County, CA",
-    status: "Available",
-    rate: "$700 - $1,000",
-  },
-];
+// const bands = [
+//   {
+//     name: "Hell City Havoc",
+//     genre: "Psychobilly / Punk",
+//     location: "Southern California",
+//     status: "Available",
+//     rate: "$800 - $1,500",
+//   },
+//   {
+//     name: "The Grave Shakers",
+//     genre: "Rockabilly",
+//     location: "Los Angeles, CA",
+//     status: "Booked",
+//     rate: "$1,200+",
+//   },
+//   {
+//     name: "Dead Radio Kings",
+//     genre: "Punk Rock",
+//     location: "Orange County, CA",
+//     status: "Available",
+//     rate: "$700 - $1,000",
+//   },
+// ];
 
-const bookingRequests = [
-  {
-    band: "Hell City Havoc",
-    venue: "Alex’s Bar",
-    city: "Long Beach, CA",
-    date: "2026-08-15",
-    status: "Pending",
-  },
-  {
-    band: "The Grave Shakers",
-    venue: "The Viper Room",
-    city: "Los Angeles, CA",
-    date: "2026-09-02",
-    status: "Confirmed",
-  },
-];
+// const bookingRequests = [
+//   {
+//     band: "Hell City Havoc",
+//     venue: "Alex’s Bar",
+//     city: "Long Beach, CA",
+//     date: "2026-08-15",
+//     status: "Pending",
+//   },
+//   {
+//     band: "The Grave Shakers",
+//     venue: "The Viper Room",
+//     city: "Los Angeles, CA",
+//     date: "2026-09-02",
+//     status: "Confirmed",
+//   },
+// ];
 
 const venues = [
   {
@@ -101,7 +101,7 @@ function App() {
 
         <div className="hero-image-container">
         <img
-          src={`${import.meta.env.BASE_URL}images/romeo2.png`}
+          src={`${import.meta.env.BASE_URL}images/romeo3.png`}
           alt="Romeo Booking"
           className="hero-image"
         />
@@ -118,6 +118,78 @@ function App() {
 
         <div className="band-links">
         <a
+          href="https://www.instagram.com/hell_city_havoc_official/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="band-link"
+        >
+          <img
+            src={`${import.meta.env.BASE_URL}images/hch.png`}
+            alt="Hell City Havoc"
+          />
+        </a>
+
+        <a
+          href="https://www.instagram.com/hellbillys_band_page/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="band-link"
+        >
+          <img
+            src={`${import.meta.env.BASE_URL}images/hellbillys.png`}
+            alt="So Cal Romeo"
+          />
+        </a>
+
+        <a
+          href="https://www.instagram.com/the_hexxers_/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="band-link"
+        >
+          <img
+            src={`${import.meta.env.BASE_URL}images/hexxers.png`}
+            alt="Band 3"
+          />
+        </a>
+
+          <a
+          href="https://www.instagram.com/hell_city_havoc_official/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="band-link"
+        >
+          <img
+            src={`${import.meta.env.BASE_URL}images/hch.png`}
+            alt="Hell City Havoc"
+          />
+        </a>
+
+        <a
+          href="https://www.instagram.com/hellbillys_band_page/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="band-link"
+        >
+          <img
+            src={`${import.meta.env.BASE_URL}images/hellbillys.png`}
+            alt="So Cal Romeo"
+          />
+        </a>
+
+        <a
+          href="https://www.instagram.com/the_hexxers_/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="band-link"
+        >
+          <img
+            src={`${import.meta.env.BASE_URL}images/hexxers.png`}
+            alt="Band 3"
+          />
+        </a>
+
+          <a
           href="https://www.instagram.com/hell_city_havoc_official/"
           target="_blank"
           rel="noopener noreferrer"
