@@ -64,12 +64,12 @@ const venues = [
 
 function App() {
 
-  const [menuOpen, setMenuOpen] = useState(false);
+  // const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <main className="app">
 
-      <nav className="navbar">
+      {/* <nav className="navbar">
         <button
           className="hamburger"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -94,7 +94,7 @@ function App() {
             Inquiry
           </a>
         </div>
-      </nav>
+      </nav> */}
   
      <section className="hero">
         {/* <p className="eyebrow">Booking By Romeo</p> */}
@@ -313,10 +313,9 @@ function App() {
       <section className="section form-section">
         <h2>Contact Me</h2>
         <form>
-          <input type="text" placeholder="Band name" />
+          <input type="text" placeholder="Band/Artists" />
           <input type="text" placeholder="Phone Number" />
           <input type="text" placeholder="Email" />
-          <input type="date" />
           <textarea placeholder="Notes"></textarea>
           <button type="button">Submit</button>
         </form>
